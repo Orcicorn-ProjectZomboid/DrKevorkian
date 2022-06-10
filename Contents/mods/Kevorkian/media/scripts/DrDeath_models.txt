@@ -1,0 +1,39 @@
+module Kevorkian {
+    imports {
+        Base
+    }
+
+    model DrDeathPill {
+		mesh = WorldItems/Antibiotics,
+		texture = WorldItems/DrDeath_Pills,
+		scale = 0.6,
+    }
+
+    model DrDeathDrink {
+        mesh = WhiskeyBottle,
+        texture = WorldItems/DrDeath_Bottle,
+        attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 180.0000 27.0000 -89.0000,
+		}
+    }
+
+    model DrDeathDrinkGround {
+        mesh = WorldItems/WhiskeyBottle,
+        texture = WorldItems/DrDeath_Bottle,
+        scale = 0.4,
+    }
+
+    model DrDeathRecipeGround {
+        mesh = WorldItems/Magazine,
+        texture = WorldItems/DrDeath_Recipe,
+        scale = 0.4,
+    }
+
+    model DrDeathRecipeStatic {
+        mesh = Magazine,
+        texture = WorldItems/DrDeath_Recipe_Reading,
+        scale = 0.8,
+    }
+}

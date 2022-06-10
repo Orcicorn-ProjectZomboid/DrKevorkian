@@ -1,0 +1,32 @@
+module Kevorkian {
+    imports {
+        Base
+    }
+
+    recipe DrDeathCreateSuicideDrink {
+        destroy WhiskeyFull,
+        Pills=10,
+        PillsSleepingTablets=10,
+        Result: Kevorkian.DrDeathSuicideDrink,
+	    Time:150.0,
+        NeedToBeLearn:True,
+        Category:Health,
+        AnimMode:Craft,
+        Sound:MakePlaster,
+    }
+
+    recipe DrDeathCreateSuicidePills {
+        keep MortarPestle,
+        Antibiotics,
+        PillsBeta=5,
+        PillsSleepingTablets=10,
+        Pills=20,
+        Result: Kevorkian.DrDeathSuicidePills,
+        Time: 600.0,
+        NeedToBeLearn:True,
+        Category:Health,
+        AnimMode:Craft,
+        Sound:Dismantle,
+        SkillRequired:Doctor=2,
+    }
+}

@@ -1,0 +1,5 @@
+UI_EN = {
+    UI_suicide_menu = "Consume",
+    UI_suicide_confirm = "CONSUMING THIS WILL KILL YOU!<br><br>Are you sure you want to die?",
+    UI_suicide_farewell = "Farewell cruel world",
+}

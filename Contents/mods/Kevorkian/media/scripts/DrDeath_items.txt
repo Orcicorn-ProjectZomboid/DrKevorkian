@@ -1,0 +1,78 @@
+module Kevorkian {
+	imports { 
+		Base
+	}
+
+	item DrDeathSuicidePills {
+		DisplayName = Suicide Pill,
+		Icon = DrDeath_Pills,
+		WorldStaticModel = Kevorkian.DrDeathPill,
+		Weight = 0.1,
+		Type = Food,
+		UseDelta = 1,
+		CantBeFrozen = True,
+		DisplayCategory = FirstAid,
+		Medical = True,
+		Poison = True,
+		PoisonDetectionLevel = 7,
+		PoisonPower = 120,
+	}
+
+	item DrDeathSuicideDrink {
+		DisplayName = Suicide Concoction,
+		DisplayCategory = Food,
+		Icon = DrDeath_Bottle,
+		StaticModel = Kevorkian.DrDeathDrink,
+		WorldStaticModel = Kevorkian.DrDeathDrinkGround,
+		Weight = 0.8,
+		Type = Food,
+		CantBeFrozen = True,
+		ReplaceOnUse = WhiskeyEmpty,
+		Poison = True,
+		PoisonDetectionLevel = 7,
+		PoisonPower = 120,
+	}
+
+    item DrDeathJacket {
+        DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Kevorkian Group Medical Coat,
+        ClothingItem = DrDeathJacket,
+        BodyLocation = Jacket,
+        Icon = JacketDoctor,
+        BloodLocation = LongJacket,
+        RunSpeedModifier = 0.93,
+        CombatSpeedModifier = 0.95,
+        ScratchDefense = 20,
+        NeckProtectionModifier = 0.5,
+        Insulation = 0.35,
+        WindResistance = 0.25,
+        FabricType = Cotton,
+        Weight = 2,
+        WorldStaticModel = JacketLong_Ground,
+    }
+
+	item DrDeathRecipePills {
+        Weight = 0.2,
+        Type = Literature,
+        DisplayName	= Recipe for Suicide Pills,
+		TeachedRecipes = DrDeathCreateSuicidePills,
+		DisplayCategory = SkillBook,
+        Icon = DrDeath_Recipe,
+        WorldStaticModel = DrDeathRecipeGround,
+		StaticModel = DrDeathRecipeStatic,
+		ReplaceOnUse = Kevorkian.DrDeathRecipePills,
+    }
+
+	item DrDeathRecipeDrink {
+        Weight = 0.2,
+        Type = Literature,
+        DisplayName	= Recipe for Suicide Concoction,
+		TeachedRecipes = DrDeathCreateSuicideDrink,
+		DisplayCategory = SkillBook,
+        Icon = DrDeath_Recipe,
+        WorldStaticModel = DrDeathRecipeGround,
+		StaticModel = DrDeathRecipeStatic,
+		ReplaceOnUse = Kevorkian.DrDeathRecipeDrink,
+    }
+}

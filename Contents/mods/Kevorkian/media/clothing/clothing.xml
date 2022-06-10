@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<outfitManager>
+	<!-- Dr Kevorkian -->
+    <m_MaleOutfits>
+        <m_Name>DrKevorkian</m_Name>
+        <m_Guid>drkevork-71d2-484d-bf56-2a09de45b399</m_Guid>
+        <m_Top>false</m_Top>
+        <m_Pants>false</m_Pants>
+		<m_AllowPantsHue>false</m_AllowPantsHue>
+		<m_AllowTopTint>false</m_AllowTopTint>
+		<m_AllowTShirtDecal>false</m_AllowTShirtDecal>
+		<m_items> <!-- Dr Jacket-->
+			<itemGUID>drkevork-75c5-4cea-9474-a3b69c67f71d</itemGUID>
+		</m_items>
+		<m_items> <!-- Ankle Socks -->
+			<itemGUID>ebea15c8-99b3-4e20-905b-d22cf82b8217</itemGUID>
+		</m_items>
+		<m_items> <!-- Black Shoes -->
+			<itemGUID>593bea3d-c127-4574-ac1e-2197dc56e486</itemGUID>
+		</m_items>
+		<m_items> <!-- Trousers: Suit Texture -->
+			<itemGUID>d3481027-59dc-42ac-9e66-8cc2ba1f66a4</itemGUID>
+		</m_items>
+		<m_items> <!-- Formal White Shirt-->
+			<itemGUID>ac7976de-2c73-44ea-9392-5d24ac1fb649</itemGUID>
+			<subItems> <!-- Format White Tint -->
+				<itemGUID>d556b848-5a37-400c-9322-2504bff33433</itemGUID>
+			</subItems>
+		</m_items>
+		<m_items> <!-- Reading Glasses -->
+			<itemGUID>9df22d1f-96cd-4d2c-88f2-4e7423d93649</itemGUID>
+		</m_items>
+		<m_items> <!-- Gold Left Ring Finger-->
+			<itemGUID>4cbb081e-0e9a-4248-bec1-0aa226e082e1</itemGUID>
+		</m_items>
+		<m_items> <!-- Digital Watch-->
+			<itemGUID>c7cc655b-284a-4087-85a6-d7c116385fb0</itemGUID>
+		</m_items>
+		<m_items> <!-- Tie -->
+			<itemGUID>d53c3cb1-4c67-4627-b9d9-0da2cc024980</itemGUID>
+		</m_items>
+    </m_MaleOutfits>
+
+	<!-- Kevorkian Group Male Member -->
+	<m_MaleOutfits>
+        <m_Name>DrKevorkianGroupMember</m_Name>
+        <m_Guid>drkevork-grpm-484d-bf56-2a09de45b399</m_Guid>
+        <m_Top>false</m_Top>
+        <m_Pants>false</m_Pants>
+		<m_AllowPantsHue>false</m_AllowPantsHue>
+		<m_AllowTopTint>false</m_AllowTopTint>
+		<m_AllowTShirtDecal>false</m_AllowTShirtDecal>
+		<m_items> <!-- Dr Kevorkian Group Jacket-->
+			<itemGUID>drkevork-75c5-4cea-9474-a3b69c67f71d</itemGUID>
+		</m_items>
+		<m_items> <!-- Ankle Socks -->
+			<itemGUID>ebea15c8-99b3-4e20-905b-d22cf82b8217</itemGUID>
+		</m_items>
+		<m_items> <!-- Black Shoes -->
+			<itemGUID>593bea3d-c127-4574-ac1e-2197dc56e486</itemGUID>
+		</m_items>
+		<m_items> <!-- Trousers: Scrubs -->
+			<itemGUID>36eb3ab3-491b-4947-8eba-9bc61158112d</itemGUID>
+		</m_items>
+		<m_items> <!-- Surgical Mask -->
+			<itemGUID>b73fbbc8-f390-4b5a-ad4f-b24239c185e1</itemGUID>
+		</m_items>
+		<m_items> <!-- Formal White Shirt-->
+			<itemGUID>ac7976de-2c73-44ea-9392-5d24ac1fb649</itemGUID>
+			<subItems> <!-- Format White Tint -->
+				<itemGUID>d556b848-5a37-400c-9322-2504bff33433</itemGUID>
+			</subItems>
+		</m_items>
+		<m_items> <!-- Tie -->
+			<itemGUID>d53c3cb1-4c67-4627-b9d9-0da2cc024980</itemGUID>
+		</m_items>
+    </m_MaleOutfits>
+
+	<!-- Kevorkian Group Female Member -->
+	<m_FemaleOutfits>
+        <m_Name>DrKevorkianGroupMember</m_Name>
+        <m_Guid>drkevork-grpf-484d-bf56-2a09de45b399</m_Guid>
+        <m_Top>false</m_Top>
+        <m_Pants>false</m_Pants>
+		<m_AllowPantsHue>false</m_AllowPantsHue>
+		<m_AllowTopTint>false</m_AllowTopTint>
+		<m_AllowTShirtDecal>false</m_AllowTShirtDecal>
+		<m_items> <!-- Dr Kevorkian Group Jacket-->
+			<itemGUID>drkevork-75c5-4cea-9474-a3b69c67f71d</itemGUID>
+		</m_items>
+		<m_items> <!-- Ankle Socks -->
+			<itemGUID>ebea15c8-99b3-4e20-905b-d22cf82b8217</itemGUID>
+		</m_items>
+		<m_items> <!-- Black Shoes -->
+			<itemGUID>593bea3d-c127-4574-ac1e-2197dc56e486</itemGUID>
+		</m_items>
+		<m_items> <!-- Trousers: Scrubs -->
+			<itemGUID>36eb3ab3-491b-4947-8eba-9bc61158112d</itemGUID>
+		</m_items>
+		<m_items> <!-- Surgical Mask -->
+			<itemGUID>b73fbbc8-f390-4b5a-ad4f-b24239c185e1</itemGUID>
+		</m_items>
+		<m_items> <!-- Formal White Shirt-->
+			<itemGUID>ac7976de-2c73-44ea-9392-5d24ac1fb649</itemGUID>
+			<subItems> <!-- Format White Tint -->
+				<itemGUID>d556b848-5a37-400c-9322-2504bff33433</itemGUID>
+			</subItems>
+		</m_items>
+		<m_items> <!-- Tie -->
+			<itemGUID>d53c3cb1-4c67-4627-b9d9-0da2cc024980</itemGUID>
+		</m_items>
+    </m_FemaleOutfits>
+</outfitManager>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fileGuidTable>
+    <!-- Vanilla items to be used on Zombie Spawns -->
+	<files>
+		<path>media/clothing/clothingItems/JacketLong_Doctor.xml</path>
+		<guid>d66bd59d-75c5-4cea-9474-a3b69c67f71d</guid>
+	</files>
+	<files>
+		<path>media/clothing/clothingItems/Socks_Ankle.xml</path>
+		<guid>ebea15c8-99b3-4e20-905b-d22cf82b8217</guid>
+	</files>
+	<files>
+		<path>media/clothing/clothingItems/Shoes_Black.xml</path>
+		<guid>593bea3d-c127-4574-ac1e-2197dc56e486</guid>
+	</files>
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Black.xml</path>
+		<guid>d3481027-59dc-42ac-9e66-8cc2ba1f66a4</guid>
+	</files>
+	<files>
+		<path>media/clothing/clothingItems/Trousers_Scrubs.xml</path>
+		<guid>36eb3ab3-491b-4947-8eba-9bc61158112d</guid>
+	</files>
+	<files>
+		<path>media/clothing/clothingItems/Shirt_FormalWhite.xml</path>
+		<guid>ac7976de-2c73-44ea-9392-5d24ac1fb649</guid>
+	</files>
+	<files>
+		<path>media/clothing/clothingItems/Shirt_FormalTINT.xml</path>
+		<guid>d556b848-5a37-400c-9322-2504bff33433</guid>
+	</files>
+	<files>
+		<path>media/clothing/clothingItems/Glasses_Reading.xml</path>
+		<guid>9df22d1f-96cd-4d2c-88f2-4e7423d93649</guid>
+	</files>
+	<files>
+		<path>media/clothing/clothingItems/Ring_Left_RingFinger_Gold.xml</path>
+		<guid>4cbb081e-0e9a-4248-bec1-0aa226e082e1</guid>
+	</files>
+	<files>
+		<path>media/clothing/clothingItems/WristWatch_Left_DigitalBlack.xml</path>
+		<guid>c7cc655b-284a-4087-85a6-d7c116385fb0</guid>
+	</files>
+	<files>
+		<path>media/clothing/clothingItems/Tie_Full.xml</path>
+		<guid>d53c3cb1-4c67-4627-b9d9-0da2cc024980</guid>
+	</files>
+	<files>
+		<path>media/clothing/clothingItems/DrDeathJacket.xml</path>
+		<guid>drkevork-75c5-4cea-9474-a3b69c67f71d</guid>
+	</files>
+	<files>
+		<path>media/clothing/clothingItems/Hat_SurgicalMask_Green.xml</path>
+		<guid>b73fbbc8-f390-4b5a-ad4f-b24239c185e1</guid>
+	</files>
+</fileGuidTable>

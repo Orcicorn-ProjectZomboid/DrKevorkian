@@ -1,0 +1,7 @@
+ItemName_EN = {
+    ItemName_Kevorkian.DrDeathSuicidePills = "Suicide Pills",
+    ItemName_Kevorkian.DrDeathSuicideDrink = "Suicide concoction",
+    ItemName_Kevorkian.DrDeathRecipePills = "Recipe for Suicide Pills",
+    ItemName_Kevorkian.DrDeathRecipeDrink = "Recipe for Suicide Concoction",
+    ItemName_Kevorkian.DrDeathJacket = "Kevorkian Group Medical Coat",
+}

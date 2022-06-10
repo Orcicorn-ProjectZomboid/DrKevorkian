@@ -1,0 +1,15 @@
+version=1
+id=
+title=Dr. Kevorkian's Suicide Concoctions
+description=Dr. Kevorkian
+description=
+description=[h1]Source Code[/h1]
+description=Dr. Kevorkian's Suicide Concoctions is Open-Source and published on [url=https://github.com/Orcicorn-ProjectZomboid/DrKevorkian]Github[/url].
+description=Repackage, redistribute, recode, whatever, I don't care, do as you please.
+description=
+description=[h1]Like what I'm doing?[/h1]
+description=[img]https://raw.githubusercontent.com/Orcicorn-ProjectZomboid/.github/master/images/like_favorite.gif[/img] [url=https://ko-fi.com/orcicorn][img]https://raw.githubusercontent.com/Orcicorn-ProjectZomboid/.github/master/images/kofi.png[/img][/url]
+Workshop ID:
+Mod ID: Kevorkian
+tags=Build 41;Food
+visibility=Unlisted
