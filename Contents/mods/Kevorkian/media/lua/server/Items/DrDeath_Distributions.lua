@@ -1,22 +1,28 @@
+require 'Items/Distributions'
 require 'Items/ProceduralDistributions'
 require 'Items/SuburbsDistributions'
 require 'Vehicles/VehicleDistributions'
+
+Distributions = Distributions or {};
+ProceduralDistributions = ProceduralDistributions or {};
+SuburbsDistributions = SuburbsDistributions or {};
+VehicleDistributions = VehicleDistributions or {};
 
 -- -----------------------------------------------------------------
 -- OUTFIT BASED LOOT DISTRIBUTIONS ---------------------------------
 -- -----------------------------------------------------------------
 -- > Dr Kevorkian
-DrKevorkian_Loot = {
+local DrKevorkian_Loot = {
     rolls = 1,
     items = {
         "Kevorkian.DrDeathRecipePills", 1000,
         "Kevorkian.DrDeathSuicidePills", 1000,
     }
 };
-SuburbsDistributions.all.Outfit_DrKevorkian = SuburbsDistributions.all.Outfit_DrKevorkian or DrKevorkian_Loot;
+SuburbsDistributions.all.Outfit_DrKevorkian = DrKevorkian_Loot;
 
 -- > Dr Kevorkian Group Members
-DrKevorkianGroupMember_Loot = {
+local DrKevorkianGroupMember_Loot = {
     rolls = 1,
     items = {
         "Cigarettes", 2,
@@ -35,7 +41,7 @@ DrKevorkianGroupMember_Loot = {
         "Kevorkian.DrDeathSuicidePills", 1000,
     }
 }
-SuburbsDistributions.all.Outfit_DrKevorkianGroupMember = SuburbsDistributions.all.Outfit_DrKevorkianGroupMember or DrKevorkianGroupMember_Loot;
+SuburbsDistributions.all.Outfit_DrKevorkianGroupMember = DrKevorkianGroupMember_Loot;
 
 
 -- -----------------------------------------------------------------
