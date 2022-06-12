@@ -79,7 +79,7 @@
 	<!-- Kevorkian Group Female Member -->
 	<m_FemaleOutfits>
         <m_Name>DrKevorkianGroupMember</m_Name>
-        <m_Guid>drkevork-grpf-484d-bf56-2a09de45b399</m_Guid>
+        <m_Guid>drkevork-grpm-484d-bf56-2a09de45b399</m_Guid>
         <m_Top>false</m_Top>
         <m_Pants>false</m_Pants>
 		<m_AllowPantsHue>false</m_AllowPantsHue>
