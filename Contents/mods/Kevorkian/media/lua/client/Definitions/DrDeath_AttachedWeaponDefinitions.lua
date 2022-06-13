@@ -40,7 +40,7 @@ AttachedWeaponDefinitions.DrDeathPills = {
 }
 
 AttachedWeaponDefinitions.DrDeathDrinkRecipe = {
-	chance = 2,
+	chance = 1,
 	weaponLocation = {"Belt Left"},
 	bloodLocations = nil,
 	addHoles = false,
