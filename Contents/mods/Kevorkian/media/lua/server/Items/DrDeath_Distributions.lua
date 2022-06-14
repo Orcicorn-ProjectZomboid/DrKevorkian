@@ -108,7 +108,11 @@ table.insert(ProceduralDistributions.list["MedicalClinicOutfit"].items, "Kevorki
 table.insert(ProceduralDistributions.list["MedicalClinicOutfit"].items, 0.25);
 table.insert(ProceduralDistributions.list["MedicalStorageOutfit"].items, "Kevorkian.DrDeathJacket");
 table.insert(ProceduralDistributions.list["MedicalStorageOutfit"].items, 0.5);
-
+-- > Pill Recipe (Extremely rare incase you can't find Dr. Kevorkian)
+table.insert(ProceduralDistributions.list["ArmyStorageMedical"].items, "Kevorkian.DrDeathRecipePills");
+table.insert(ProceduralDistributions.list["ArmyStorageMedical"].items, 0.001);
+table.insert(ProceduralDistributions.list["DrugShackMisc"].items, "Kevorkian.DrDeathRecipePills");
+table.insert(ProceduralDistributions.list["DrugShackMisc"].items, 0.01);
 
 -- -----------------------------------------------------------------
 -- SUBURB DISTRIBUTIONS --------------------------------------------
@@ -119,10 +123,10 @@ table.insert(SuburbsDistributions["all"]["inventorymale"].items, 0.001);
 table.insert(SuburbsDistributions["all"]["inventoryfemale"].items, "Kevorkian.DrDeathSuicidePills");
 table.insert(SuburbsDistributions["all"]["inventoryfemale"].items, 0.001);
 -- > Drinks
-table.insert(SuburbsDistributions["all"]["inventorymale"].items, "Kevorkian.DrDeathSuicidePills");
-table.insert(SuburbsDistributions["all"]["inventorymale"].items, 0.05);
-table.insert(SuburbsDistributions["all"]["inventoryfemale"].items, "Kevorkian.DrDeathSuicidePills");
-table.insert(SuburbsDistributions["all"]["inventoryfemale"].items, 0.05);
+table.insert(SuburbsDistributions["all"]["inventorymale"].items, "Kevorkian.DrDeathSuicideDrink");
+table.insert(SuburbsDistributions["all"]["inventorymale"].items, 0.01);
+table.insert(SuburbsDistributions["all"]["inventoryfemale"].items, "Kevorkian.DrDeathSuicideDrink");
+table.insert(SuburbsDistributions["all"]["inventoryfemale"].items, 0.01);
 
 
 -- -----------------------------------------------------------------
