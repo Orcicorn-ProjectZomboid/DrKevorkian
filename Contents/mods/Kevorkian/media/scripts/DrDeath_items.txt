@@ -39,7 +39,7 @@ module Kevorkian {
         DisplayName = Kevorkian Group Medical Coat,
         ClothingItem = DrDeathJacket,
         BodyLocation = Jacket,
-        Icon = JacketDoctor,
+        Icon = DrDeath_Jacket,
         BloodLocation = LongJacket,
         RunSpeedModifier = 0.93,
         CombatSpeedModifier = 0.95,
