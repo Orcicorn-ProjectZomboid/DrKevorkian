@@ -13,32 +13,57 @@ VehicleDistributions = VehicleDistributions or {};
 -- -----------------------------------------------------------------
 -- > Dr Kevorkian
 local DrKevorkian_Loot = {
-    rolls = 1,
+    rolls = 2,
     items = {
-        "Kevorkian.DrDeathRecipePills", 1000,
-        "Kevorkian.DrDeathSuicidePills", 1000,
+        "Base.BookFirstAid5", 0.5,
+        "Base.AlcoholedCottonBalls", 5,
+        "Base.Journal", 5,
+        "Base.Tissue", 10,
+        "Base.Pills", 10,
+        "Base.PillsAntiDep", 15,
+        "Base.Money", 15,
+        "Base.Money", 15,
+        "Base.Money", 15,
+        "Base.Money", 15,
+        "Base.Money", 15,
+        "Base.Money", 15,
+        "Base.Money", 15,
+        "Base.Money", 15,
+        "Base.Money", 15,
+        "Base.Money", 15,
+        "Base.Money", 15,
+        "Base.Lollipop", 25,
+        "Base.Briefcase", 48,
+        "Kevorkian.DrDeathRecipeDrink", 0.1,
+        "Kevorkian.DrDeathSuicideDrink", 5,
+        -- These are attached as weapons, no need for loot
+        -- See DrDeath_AttachedWeaponDefinitions.lua for explanation
+        --"Kevorkian.DrDeathRecipePills", 1000,
+        --"Kevorkian.DrDeathSuicidePills", 1000,
     }
 };
 SuburbsDistributions.all.Outfit_DrKevorkian = DrKevorkian_Loot;
 
 -- > Dr Kevorkian Group Members
 local DrKevorkianGroupMember_Loot = {
-    rolls = 1,
+    rolls = 3,
     items = {
-        "Cigarettes", 2,
-        "Scalpel", 25,
-        "Pen", 50,
-        "Wallet", 10,
-        "Bandage", 10,
-        "PillsBeta", 10,
-        "PillsAntiDep", 15,
-        "Pills", 25,
-        "PillsSleepingTablets", 20,
-        "WhiskeyEmpty", 50,
+        "Base.Money", 1,
+        "Base.Cigarettes", 5,
+        "Base.Scalpel", 25,
+        "Base.Bandage", 10,
+        "Base.PillsBeta", 10,
+        "Base.PillsAntiDep", 15,
+        "Base.Pills", 25,
+        "Base.PillsSleepingTablets", 20,
+        "Base.Lollipop", 25,
+        "Base.WhiskeyEmpty", 50,
         "Kevorkian.DrDeathRecipePills", 0.01,
-        "Kevorkian.DrDeathRecipeDrink", 1,
-        "Kevorkian.DrDeathSuicideDrink", 5,
-        "Kevorkian.DrDeathSuicidePills", 1000,
+        "Kevorkian.DrDeathRecipeDrink", 0.01,
+        "Kevorkian.DrDeathSuicideDrink", 1,
+        -- Attached as a weapon, no need for loot
+        -- See DrDeath_AttachedWeaponDefinitions.lua for explanation
+        --"Kevorkian.DrDeathSuicidePills", 1000,
     }
 }
 SuburbsDistributions.all.Outfit_DrKevorkianGroupMember = DrKevorkianGroupMember_Loot;
