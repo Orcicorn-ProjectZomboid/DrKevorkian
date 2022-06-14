@@ -101,6 +101,13 @@ table.insert(ProceduralDistributions.list["PlankStashMoney"].items, 5);
 -- > Drink Recipe
 table.insert(ProceduralDistributions.list["PrisonCellRandom"].items, "Kevorkian.DrDeathRecipeDrink");
 table.insert(ProceduralDistributions.list["PrisonCellRandom"].items, 0.01);
+-- > Kevorkian Jacket
+table.insert(ProceduralDistributions.list["HospitalLockers"].items, "Kevorkian.DrDeathJacket");
+table.insert(ProceduralDistributions.list["HospitalLockers"].items, 1);
+table.insert(ProceduralDistributions.list["MedicalClinicOutfit"].items, "Kevorkian.DrDeathJacket");
+table.insert(ProceduralDistributions.list["MedicalClinicOutfit"].items, 0.25);
+table.insert(ProceduralDistributions.list["MedicalStorageOutfit"].items, "Kevorkian.DrDeathJacket");
+table.insert(ProceduralDistributions.list["MedicalStorageOutfit"].items, 0.5);
 
 
 -- -----------------------------------------------------------------
