@@ -29,7 +29,7 @@ require "Definitions/AttachedWeaponDefinitions"
 -- ----------------------------------------------
 AttachedWeaponDefinitions = AttachedWeaponDefinitions or {};
 AttachedWeaponDefinitions.DrDeathPills = {
-	chance = 100,
+	chance = 10,
 	weaponLocation = {"Knife Stomach"},
 	bloodLocations = nil,
 	addHoles = false,
@@ -38,7 +38,6 @@ AttachedWeaponDefinitions.DrDeathPills = {
 		"Kevorkian.DrDeathSuicidePills",
 	},
 }
-
 AttachedWeaponDefinitions.DrDeathDrinkRecipe = {
 	chance = 1,
 	weaponLocation = {"Belt Left"},
@@ -50,7 +49,7 @@ AttachedWeaponDefinitions.DrDeathDrinkRecipe = {
 	},
 }
 AttachedWeaponDefinitions.DrDeathPillRecipe = {
-	chance = 1,
+	chance = 0.5,
 	weaponLocation = {"Belt Right"},
 	bloodLocations = nil,
 	addHoles = false,
@@ -60,6 +59,16 @@ AttachedWeaponDefinitions.DrDeathPillRecipe = {
 	},
 }
 
+AttachedWeaponDefinitions.DrDeathPills100 = {
+	chance = 100,
+	weaponLocation = {"Knife Stomach"},
+	bloodLocations = nil,
+	addHoles = false,
+	daySurvived = 0,
+	weapons = {
+		"Kevorkian.DrDeathSuicidePills",
+	},
+}
 AttachedWeaponDefinitions.DrDeathPillRecipe100 = {
 	chance = 100,
 	weaponLocation = {"Belt Right"},
@@ -79,7 +88,7 @@ AttachedWeaponDefinitions.DrDeathPillRecipe100 = {
 -- > DrKevorkianGroupMember attachments
 AttachedWeaponDefinitions.attachedWeaponCustomOutfit.DrKevorkianGroupMember = {
 	chance = 100;
-	maxitem = 1;
+	maxitem = 2;
 	weapons = {
 		AttachedWeaponDefinitions.DrDeathPills,
 		AttachedWeaponDefinitions.DrDeathDrinkRecipe,
@@ -92,7 +101,7 @@ AttachedWeaponDefinitions.attachedWeaponCustomOutfit.DrKevorkian = {
 	chance = 100;
 	maxitem = 2;
 	weapons = {
-		AttachedWeaponDefinitions.DrDeathPills,
+		AttachedWeaponDefinitions.DrDeathPills100,
 		AttachedWeaponDefinitions.DrDeathPillRecipe100,
 	},
 }
