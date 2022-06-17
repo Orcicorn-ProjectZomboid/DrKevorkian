@@ -36,4 +36,10 @@ module Kevorkian {
         texture = WorldItems/DrDeath_Recipe_Reading,
         scale = 0.8,
     }
+
+    model DrDeathPhoto {
+        mesh = WorldItems/KatePic,
+		texture = WorldItems/DrDeath_Photo,
+		scale = 0.4,
+    }
 }

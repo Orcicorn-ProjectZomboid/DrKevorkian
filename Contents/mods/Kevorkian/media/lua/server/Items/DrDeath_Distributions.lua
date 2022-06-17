@@ -21,19 +21,19 @@ local DrKevorkian_Loot = {
         "Base.Tissue", 10,
         "Base.Pills", 10,
         "Base.PillsAntiDep", 15,
-        "Base.Money", 15,
-        "Base.Money", 15,
-        "Base.Money", 15,
-        "Base.Money", 15,
-        "Base.Money", 15,
-        "Base.Money", 15,
-        "Base.Money", 15,
-        "Base.Money", 15,
-        "Base.Money", 15,
-        "Base.Money", 15,
-        "Base.Money", 15,
         "Base.Lollipop", 25,
         "Base.Briefcase", 48,
+        "Base.Money", 100,
+        "Base.Money", 100,
+        "Base.Money", 100,
+        "Base.Money", 100,
+        "Base.Money", 100,
+        "Base.Money", 100,
+        "Base.Money", 100,
+        "Base.Money", 100,
+        "Base.Money", 100,
+        "Base.Money", 100,
+        "Base.Money", 100,
         "Kevorkian.DrDeathRecipeDrink", 0.1,
         "Kevorkian.DrDeathSuicideDrink", 5,
         -- These are attached as weapons, no need for loot
@@ -113,6 +113,11 @@ table.insert(ProceduralDistributions.list["ArmyStorageMedical"].items, "Kevorkia
 table.insert(ProceduralDistributions.list["ArmyStorageMedical"].items, 0.001);
 table.insert(ProceduralDistributions.list["DrugShackMisc"].items, "Kevorkian.DrDeathRecipePills");
 table.insert(ProceduralDistributions.list["DrugShackMisc"].items, 0.01);
+-- > Signed Photograph of Dr. Kevorkian (Ridiculously rare)
+table.insert(ProceduralDistributions.list["BedroomSideTable"].items, "Kevorkian.DrDeathPhotograph");
+table.insert(ProceduralDistributions.list["BedroomSideTable"].items, 0.0001);
+table.insert(ProceduralDistributions.list["HospitalLockers"].items, "Kevorkian.DrDeathPhotograph");
+table.insert(ProceduralDistributions.list["HospitalLockers"].items, 0.0001);
 
 -- -----------------------------------------------------------------
 -- SUBURB DISTRIBUTIONS --------------------------------------------
@@ -127,6 +132,11 @@ table.insert(SuburbsDistributions["all"]["inventorymale"].items, "Kevorkian.DrDe
 table.insert(SuburbsDistributions["all"]["inventorymale"].items, 0.01);
 table.insert(SuburbsDistributions["all"]["inventoryfemale"].items, "Kevorkian.DrDeathSuicideDrink");
 table.insert(SuburbsDistributions["all"]["inventoryfemale"].items, 0.01);
+-- > Signed Photograph (Insanely rare on zombies)
+table.insert(SuburbsDistributions["all"]["inventorymale"].items, "Kevorkian.DrDeathPhotograph");
+table.insert(SuburbsDistributions["all"]["inventorymale"].items, 0.00001);
+table.insert(SuburbsDistributions["all"]["inventoryfemale"].items, "Kevorkian.DrDeathPhotograph");
+table.insert(SuburbsDistributions["all"]["inventoryfemale"].items, 0.00001);
 
 
 -- -----------------------------------------------------------------

@@ -77,4 +77,14 @@ module Kevorkian {
 		/* See shared/Definitions/DrDeath_AttachedWeaponDefinitions.lua for reasons */
 		/* StaticModel = DrDeathRecipeStatic, */
     }
+
+	item DrDeathPhotograph {
+		DisplayCategory = Junk,
+		Weight = 0.2,
+		Type = Normal,
+		DisplayName	= Signed photo of Dr. Kevorkian,
+		Icon = DrDeath_Photo,
+		Tooltip = Tooltip_DrDeathPhotoTooltip,
+		WorldStaticModel = DrDeathPhoto,
+	}
 }
