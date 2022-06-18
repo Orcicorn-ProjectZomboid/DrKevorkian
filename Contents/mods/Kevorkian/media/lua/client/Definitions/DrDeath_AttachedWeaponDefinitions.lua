@@ -38,18 +38,9 @@ AttachedWeaponDefinitions.DrDeathPills = {
 		"Kevorkian.DrDeathSuicidePills",
 	},
 }
-AttachedWeaponDefinitions.DrDeathDrinkRecipe = {
-	chance = 1,
-	weaponLocation = {"Belt Left"},
-	bloodLocations = nil,
-	addHoles = false,
-	daySurvived = 0,
-	weapons = {
-		"Kevorkian.DrDeathRecipeDrink",
-	},
-}
-AttachedWeaponDefinitions.DrDeathPillRecipe = {
-	chance = 0.5,
+
+AttachedWeaponDefinitions.DrDeathPillRecipe100 = {
+	chance = 100,
 	weaponLocation = {"Belt Right"},
 	bloodLocations = nil,
 	addHoles = false,
@@ -69,17 +60,6 @@ AttachedWeaponDefinitions.DrDeathPills100 = {
 		"Kevorkian.DrDeathSuicidePills",
 	},
 }
-AttachedWeaponDefinitions.DrDeathPillRecipe100 = {
-	chance = 100,
-	weaponLocation = {"Belt Right"},
-	bloodLocations = nil,
-	addHoles = false,
-	daySurvived = 0,
-	weapons = {
-		"Kevorkian.DrDeathRecipePills",
-	},
-}
-
 
 
 -- ----------------------------------------------
@@ -87,12 +67,10 @@ AttachedWeaponDefinitions.DrDeathPillRecipe100 = {
 -- ----------------------------------------------
 -- > DrKevorkianGroupMember attachments
 AttachedWeaponDefinitions.attachedWeaponCustomOutfit.DrKevorkianGroupMember = {
-	chance = 100;
-	maxitem = 2;
+	chance = 10;
+	maxitem = 1;
 	weapons = {
 		AttachedWeaponDefinitions.DrDeathPills,
-		AttachedWeaponDefinitions.DrDeathDrinkRecipe,
-		AttachedWeaponDefinitions.DrDeathPillRecipe,
 	},
 }
 

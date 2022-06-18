@@ -18,7 +18,7 @@ ZombiesZoneDefinition.Doctor[DrKevorkian] = DrKevorkian;
 
 
 -- General Population Spawns
-table.insert(ZombiesZoneDefinition.Default, {name="DrKevorkianGroupMember", chance=1});
+table.insert(ZombiesZoneDefinition.Default, {name="DrKevorkianGroupMember", chance=0.5});
 table.insert(ZombiesZoneDefinition.Default, {name="DrKevorkian", chance=0.05, gender="male"});
 
 -- Kevorkian Group Doctors
