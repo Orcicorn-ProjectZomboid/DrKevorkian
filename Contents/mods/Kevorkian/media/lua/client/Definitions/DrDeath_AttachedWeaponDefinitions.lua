@@ -29,7 +29,7 @@ require "Definitions/AttachedWeaponDefinitions"
 -- ----------------------------------------------
 AttachedWeaponDefinitions = AttachedWeaponDefinitions or {};
 AttachedWeaponDefinitions.DrDeathPills = {
-	chance = 10,
+	chance = 25,
 	weaponLocation = {"Knife Stomach"},
 	bloodLocations = nil,
 	addHoles = false,
@@ -67,7 +67,7 @@ AttachedWeaponDefinitions.DrDeathPills100 = {
 -- ----------------------------------------------
 -- > DrKevorkianGroupMember attachments
 AttachedWeaponDefinitions.attachedWeaponCustomOutfit.DrKevorkianGroupMember = {
-	chance = 10;
+	chance = 25;
 	maxitem = 1;
 	weapons = {
 		AttachedWeaponDefinitions.DrDeathPills,
