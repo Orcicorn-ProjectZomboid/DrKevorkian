@@ -61,8 +61,8 @@ module Kevorkian {
         Icon = DrDeath_Recipe,
         WorldStaticModel = DrDeathRecipeGround,
 		ReplaceOnUse = Kevorkian.DrDeathRecipePills,
-		/* See shared/Definitions/DrDeath_AttachedWeaponDefinitions.lua for reasons */
-		/* StaticModel = DrDeathRecipeStatic, */
+		StaticModel = DrDeathRecipeStatic,
+		/* Doesn't actually spawn, Admin Item */
     }
 
 	item DrDeathRecipeDrink {
@@ -74,17 +74,16 @@ module Kevorkian {
         Icon = DrDeath_Recipe,
         WorldStaticModel = DrDeathRecipeGround,
 		ReplaceOnUse = Kevorkian.DrDeathRecipeDrink,
-		/* See shared/Definitions/DrDeath_AttachedWeaponDefinitions.lua for reasons */
-		/* StaticModel = DrDeathRecipeStatic, */
+		StaticModel = DrDeathRecipeStatic,
     }
 
 	item DrDeathPhotograph {
-		DisplayCategory = Junk,
+	    DisplayCategory = Junk,
 		Weight = 0.2,
 		Type = Normal,
 		DisplayName	= Signed photo of Dr. Kevorkian,
 		Icon = DrDeath_Photo,
-		Tooltip = Tooltip_DrDeathPhotoTooltip,
+        Tooltip = Tooltip_DrDeathPhotoTooltip,
 		WorldStaticModel = DrDeathPhoto,
 	}
 }
