@@ -1,0 +1,22 @@
+module Base {
+    model MaleBody {
+        mesh = Skinned/MaleBody,
+
+        /* Used for Hidding items inside the Zombie Torso */
+        attachment DrDeathHidden {
+            offset = 0.000 -0.000 -0.030,
+            rotate = 180 30 -90,
+            bone = Bip01_Pelvis,
+        }
+    }
+    model FemaleBody {
+        mesh = Skinned/FemaleBody,
+
+        /* Used for Hidding items inside the Zombie Torso */
+        attachment DrDeathHidden {
+            offset = 0.000 -0.000 -0.035,
+            rotate = 180 30 -90,
+            bone = Bip01_Pelvis,
+        }
+    }
+}
