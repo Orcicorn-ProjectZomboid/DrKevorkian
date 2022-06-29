@@ -8,6 +8,12 @@ ProceduralDistributions = ProceduralDistributions or {};
 SuburbsDistributions = SuburbsDistributions or {};
 VehicleDistributions = VehicleDistributions or {};
 
+--[[
+    These outfit based loot distributions only appear to be working in single player.
+    HOWEVER, Weapon attachments work in Single and Multiplayer. So the really important
+    loot is attached as a weapon in DrDeath_AttachedWeaponDefinitions.lua
+]]--
+
 -- -----------------------------------------------------------------
 -- OUTFIT BASED LOOT DISTRIBUTIONS ---------------------------------
 -- -----------------------------------------------------------------
@@ -36,10 +42,7 @@ local DrKevorkian_Loot = {
         "Base.Money", 100,
         "Kevorkian.DrDeathRecipeDrink", 0.1,
         "Kevorkian.DrDeathSuicideDrink", 5,
-        -- These are attached as weapons, no need for loot
-        -- See DrDeath_AttachedWeaponDefinitions.lua for explanation
-        --"Kevorkian.DrDeathRecipePills", 1000,
-        --"Kevorkian.DrDeathSuicidePills", 1000,
+        -- Pills attached as a weapon, thus not in loot
     }
 };
 SuburbsDistributions.all.Outfit_DrKevorkian = DrKevorkian_Loot;
@@ -58,12 +61,9 @@ local DrKevorkianGroupMember_Loot = {
         "Base.PillsSleepingTablets", 20,
         "Base.Lollipop", 25,
         "Base.WhiskeyEmpty", 50,
-        "Kevorkian.DrDeathRecipePills", 0.01,
+        "Kevorkian.DrDeathRecipePills", 0.001,
         "Kevorkian.DrDeathRecipeDrink", 0.01,
-        "Kevorkian.DrDeathSuicideDrink", 1,
-        -- Attached as a weapon, no need for loot
-        -- See DrDeath_AttachedWeaponDefinitions.lua for explanation
-        --"Kevorkian.DrDeathSuicidePills", 1000,
+        -- Drink attached as a weapon, thus not in loot
     }
 }
 SuburbsDistributions.all.Outfit_DrKevorkianGroupMember = DrKevorkianGroupMember_Loot;
@@ -78,9 +78,9 @@ table.insert(ProceduralDistributions.list["ArmyStorageMedical"].items, 0.1);
 table.insert(ProceduralDistributions.list["DrugLabSupplies"].items, "Kevorkian.DrDeathSuicidePills");
 table.insert(ProceduralDistributions.list["DrugLabSupplies"].items, 0.25);
 table.insert(ProceduralDistributions.list["MedicalClinicDrugs"].items, "Kevorkian.DrDeathSuicidePills");
-table.insert(ProceduralDistributions.list["MedicalClinicDrugs"].items, 0.5);
+table.insert(ProceduralDistributions.list["MedicalClinicDrugs"].items, 0.05);
 table.insert(ProceduralDistributions.list["MedicalStorageDrugs"].items, "Kevorkian.DrDeathSuicidePills");
-table.insert(ProceduralDistributions.list["MedicalStorageDrugs"].items, 0.5);
+table.insert(ProceduralDistributions.list["MedicalStorageDrugs"].items, 0.05);
 -- > Drinks
 table.insert(ProceduralDistributions.list["BarCounterWeapon"].items, "Kevorkian.DrDeathSuicideDrink");
 table.insert(ProceduralDistributions.list["BarCounterWeapon"].items, 0.25);
@@ -108,38 +108,38 @@ table.insert(ProceduralDistributions.list["MedicalClinicOutfit"].items, "Kevorki
 table.insert(ProceduralDistributions.list["MedicalClinicOutfit"].items, 0.25);
 table.insert(ProceduralDistributions.list["MedicalStorageOutfit"].items, "Kevorkian.DrDeathJacket");
 table.insert(ProceduralDistributions.list["MedicalStorageOutfit"].items, 0.5);
--- > Pill Recipe (Extremely rare incase you can't find Dr. Kevorkian)
+-- > Pill Recipe (Extremely rare)
 table.insert(ProceduralDistributions.list["ArmyStorageMedical"].items, "Kevorkian.DrDeathRecipePills");
-table.insert(ProceduralDistributions.list["ArmyStorageMedical"].items, 0.001);
+table.insert(ProceduralDistributions.list["ArmyStorageMedical"].items, 0.0001);
 table.insert(ProceduralDistributions.list["DrugShackMisc"].items, "Kevorkian.DrDeathRecipePills");
-table.insert(ProceduralDistributions.list["DrugShackMisc"].items, 0.01);
+table.insert(ProceduralDistributions.list["DrugShackMisc"].items, 0.0001);
 -- > Signed Photograph of Dr. Kevorkian (Ridiculously rare)
 table.insert(ProceduralDistributions.list["BedroomSideTable"].items, "Kevorkian.DrDeathPhotograph");
 table.insert(ProceduralDistributions.list["BedroomSideTable"].items, 0.00001);
 table.insert(ProceduralDistributions.list["HospitalLockers"].items, "Kevorkian.DrDeathPhotograph");
-table.insert(ProceduralDistributions.list["HospitalLockers"].items, 0.0001);
+table.insert(ProceduralDistributions.list["HospitalLockers"].items, 0.00001);
 
 -- -----------------------------------------------------------------
 -- SUBURB DISTRIBUTIONS --------------------------------------------
 -- -----------------------------------------------------------------
--- > Pills
-table.insert(SuburbsDistributions["all"]["inventorymale"].items, "Kevorkian.DrDeathSuicidePills");
-table.insert(SuburbsDistributions["all"]["inventorymale"].items, 0.001);
-table.insert(SuburbsDistributions["all"]["inventoryfemale"].items, "Kevorkian.DrDeathSuicidePills");
-table.insert(SuburbsDistributions["all"]["inventoryfemale"].items, 0.001);
 -- > Drinks
 table.insert(SuburbsDistributions["all"]["inventorymale"].items, "Kevorkian.DrDeathSuicideDrink");
 table.insert(SuburbsDistributions["all"]["inventorymale"].items, 0.01);
 table.insert(SuburbsDistributions["all"]["inventoryfemale"].items, "Kevorkian.DrDeathSuicideDrink");
 table.insert(SuburbsDistributions["all"]["inventoryfemale"].items, 0.01);
 
+-- > Empty Bottle implying they drank the suicide concoction
+table.insert(SuburbsDistributions["all"]["inventorymale"].items, "Base.WhiskeyEmpty");
+table.insert(SuburbsDistributions["all"]["inventorymale"].items, 0.01);
+table.insert(SuburbsDistributions["all"]["inventoryfemale"].items, "Base.WhiskeyEmpty");
+table.insert(SuburbsDistributions["all"]["inventoryfemale"].items, 0.01);
 
 -- -----------------------------------------------------------------
 -- VEHICLE DISTRIBUTIONS -------------------------------------------
 -- -----------------------------------------------------------------
 -- > Pills
 table.insert(VehicleDistributions["DoctorTruckBed"].items, "Kevorkian.DrDeathSuicidePills");
-table.insert(VehicleDistributions["DoctorTruckBed"].items, 1);
+table.insert(VehicleDistributions["DoctorTruckBed"].items, 0.1);
 -- > Drinks
 table.insert(VehicleDistributions["GloveBox"].items, "Kevorkian.DrDeathSuicideDrink");
 table.insert(VehicleDistributions["GloveBox"].items, 0.01);
