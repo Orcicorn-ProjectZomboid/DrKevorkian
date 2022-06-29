@@ -13,12 +13,13 @@ require "Definitions/AttachedWeaponDefinitions"
 
 		If you're in single player, it works 100% of the time but 0% of the time in multiplayer.
 
-		So this is a hack work around. The Pills and recipes are invisible when using their "Static"
-		definitions. Which is what shows up when you attach weapons. So perfect, we'll attach invisible
-		pills and recipes as needed and that way they'll drop on death because the game thinks it's a weapon.
-
-		Will revisit this in the future if they fix the multiplayer outfit but.
-		See "server/Items/DrDeath_Distributions/ Line 14-44"
+		So this is a hack work around. The "DrDeath Hidden" attachment is defined in
+		scripts/DrDeath_Attachments.txt and it rotates and hides items inside the torso of zombies.
+		This allows me to "hide" items inside the zombie to ensure they spawn and look like loot
+		to the player while in reality they're "weapons" as far as the game engine is concerned.
+		
+		I will revisit this in the future if they fix the multiplayer outfit bug.
+		See "server/Items/DrDeath_Distributions/ Line 14-44" (Works in Single Player)
 
 		Once that bug's fixed, this entire section can either be deleted or converted over
 		to attaching scissors, scalpels, etc to the zombie bodies for flavor.
@@ -28,9 +29,44 @@ require "Definitions/AttachedWeaponDefinitions"
 -- Define Weapon Attachments --------------------
 -- ----------------------------------------------
 AttachedWeaponDefinitions = AttachedWeaponDefinitions or {};
-AttachedWeaponDefinitions.DrDeathPills = {
-	chance = 25,
-	weaponLocation = {"Knife Stomach"},
+
+-- Will be used on KevorkianGroupSpawns
+AttachedWeaponDefinitions.DrDeathGroupDrink = {
+	chance = 100,
+	outfit = {"DrKevorkianGroupMember"},
+	weaponLocation = {"DrDeath Hidden"},
+	bloodLocations = nil,
+	addHoles = false,
+	daySurvived = 0,
+	weapons = {			-- 1 in 20 (5%) chance it's a pill
+		"Kevorkian.DrDeathSuicideDrink",
+		"Kevorkian.DrDeathSuicideDrink",
+		"Kevorkian.DrDeathSuicideDrink",
+		"Kevorkian.DrDeathSuicideDrink",
+		"Kevorkian.DrDeathSuicideDrink",
+		"Kevorkian.DrDeathSuicideDrink",
+		"Kevorkian.DrDeathSuicideDrink",
+		"Kevorkian.DrDeathSuicideDrink",
+		"Kevorkian.DrDeathSuicideDrink",
+		"Kevorkian.DrDeathSuicideDrink",
+		"Kevorkian.DrDeathSuicideDrink",
+		"Kevorkian.DrDeathSuicideDrink",
+		"Kevorkian.DrDeathSuicideDrink",
+		"Kevorkian.DrDeathSuicideDrink",
+		"Kevorkian.DrDeathSuicideDrink",
+		"Kevorkian.DrDeathSuicideDrink",
+		"Kevorkian.DrDeathSuicideDrink",
+		"Kevorkian.DrDeathSuicideDrink",
+		"Kevorkian.DrDeathSuicideDrink",
+		"Kevorkian.DrDeathSuicidePill",
+	},
+}
+
+-- Will be used on DrKevorkian
+AttachedWeaponDefinitions.DrDeathPill = {
+	chance = 100,
+	outfit = {"DrKevorkian"},
+	weaponLocation = {"DrDeath Hidden"},
 	bloodLocations = nil,
 	addHoles = false,
 	daySurvived = 0,
@@ -39,47 +75,23 @@ AttachedWeaponDefinitions.DrDeathPills = {
 	},
 }
 
-AttachedWeaponDefinitions.DrDeathPillRecipe100 = {
-	chance = 100,
-	weaponLocation = {"Belt Right"},
-	bloodLocations = nil,
-	addHoles = false,
-	daySurvived = 0,
-	weapons = {
-		"Kevorkian.DrDeathRecipePills",
-	},
-}
-
-AttachedWeaponDefinitions.DrDeathPills100 = {
-	chance = 100,
-	weaponLocation = {"Knife Stomach"},
-	bloodLocations = nil,
-	addHoles = false,
-	daySurvived = 0,
-	weapons = {
-		"Kevorkian.DrDeathSuicidePills",
-	},
-}
-
-
 -- ----------------------------------------------
--- Attach the weapons to Skins ------------------
+-- Attach the "weapons" to Skins ----------------
 -- ----------------------------------------------
--- > DrKevorkianGroupMember attachments
+-- -- > DrKevorkianGroupMember attachments
 AttachedWeaponDefinitions.attachedWeaponCustomOutfit.DrKevorkianGroupMember = {
-	chance = 25;
+	chance = 100;
 	maxitem = 1;
 	weapons = {
-		AttachedWeaponDefinitions.DrDeathPills,
+		AttachedWeaponDefinitions.DrDeathGroupDrink,
 	},
 }
 
--- > Dr Kevorkian
+-- -- > Dr Kevorkian
 AttachedWeaponDefinitions.attachedWeaponCustomOutfit.DrKevorkian = {
 	chance = 100;
-	maxitem = 2;
+	maxitem = 1;
 	weapons = {
-		AttachedWeaponDefinitions.DrDeathPills100,
-		AttachedWeaponDefinitions.DrDeathPillRecipe100,
+		AttachedWeaponDefinitions.DrDeathPill,
 	},
 }
