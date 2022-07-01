@@ -1,4 +1,5 @@
-//VHS Files
+//VHS File Media
+// HVHS == Home VHS || RVHS == Retail VHS
 // Dr. Kevorkian Deposition: Learn Suicide Drink Recipe
 RM_KEVORKIA-HVHS-0001-META-000000000001 = "Bootleg: The Kevorkian Verdict"
 RM_KEVORKIA-RVHS-0001-META-000000000001 = "VHS: The Kevorkian Verdict"

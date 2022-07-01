@@ -9,6 +9,7 @@ SuburbsDistributions = SuburbsDistributions or {};
 VehicleDistributions = VehicleDistributions or {};
 
 --[[
+FRI, 01 JUL 2022 12:52 GMT
     These outfit based loot distributions only appear to be working in single player.
     HOWEVER, Weapon attachments work in Single and Multiplayer. So the really important
     loot is attached as a weapon in DrDeath_AttachedWeaponDefinitions.lua
@@ -41,6 +42,7 @@ local DrKevorkian_Loot = {
         "Base.Money", 100,
         "Base.Money", 100,
         "Kevorkian.DrDeathRecipeDrink", 0.1,
+        "Kevorkian.DrDeathRecipePills", 0.00001,
         "Kevorkian.DrDeathSuicideDrink", 5,
         -- Pills attached as a weapon, thus not in loot
     }
@@ -61,7 +63,6 @@ local DrKevorkianGroupMember_Loot = {
         "Base.PillsSleepingTablets", 20,
         "Base.Lollipop", 25,
         "Base.WhiskeyEmpty", 50,
-        "Kevorkian.DrDeathRecipePills", 0.001,
         "Kevorkian.DrDeathRecipeDrink", 0.01,
         -- Drink attached as a weapon, thus not in loot
     }
@@ -145,3 +146,6 @@ table.insert(VehicleDistributions["GloveBox"].items, "Kevorkian.DrDeathSuicideDr
 table.insert(VehicleDistributions["GloveBox"].items, 0.01);
 table.insert(VehicleDistributions["SurvivalistTruckBed"].items, "Kevorkian.DrDeathSuicideDrink");
 table.insert(VehicleDistributions["SurvivalistTruckBed"].items, 1);
+-- > Drink Recipe
+table.insert(VehicleDistributions["SurvivalistTruckBed"].items, "Kevorkian.DrDeathRecipeDrink");
+table.insert(VehicleDistributions["SurvivalistTruckBed"].items, 0.1);
