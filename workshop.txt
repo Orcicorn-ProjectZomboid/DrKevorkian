@@ -16,7 +16,7 @@ description=[h1]Mod Additions[/h1]
 description=[list]
 description=  [*] [b]Suicide Concoction[/b]
 description=  [list]
-description=    [*] ID: Kevorkian.DrDeathSuicideDrink 
+description=    [*] ID: Kevorkian.DrDeathSuicideDrink
 description=    [*] This drink kills you within 15 minutes (game time) of consuming it.  It's a prompt but painful death.  The recipe is available rarely on Kevorkian Group Members, Spawns occasionally in the world and its recipe is available relatively commonly
 description=  [/list]
 description=  [*] [b]Suicide Pills[/b]
@@ -47,7 +47,7 @@ description=  [/list]
 description=  [*] [b]Kevorkian Group Medical Coat[/b]
 description=  [list]
 description=    [*] A wearable Doctor Coat with the Kevorkian Group arm-band
-description=    [*] ID: Kevorkian.DrDeathJacket 
+description=    [*] ID: Kevorkian.DrDeathJacket
 description=  [/list]
 description=  [*] [b]VHS: The Kevorkian Verdict[/b]
 description=  [list]
@@ -75,6 +75,12 @@ description=On my friend's multiplayer server we found ourselves getting annoyed
 description=
 description=Now we can all die quickly and with dignity.
 description=
+description=[h1]Optional Addon[/h1]
+description=There is a secondary optional addon called "Dr. Kevorkian's Addon Cyanide Rename" with the ID "[u]KevorkianCyanide[/u]".  If you enable this addon [b]after[/b] the Dr. Kevorkian assisted suicide it will simply rename all the "[i]Suicide Pills[/i]" to "[i]Cyanide Pills[/i]". Nothing else changes, it's entirely a matter of personal preferences.
+description=
+description=Make sure that the addon loads after the base mod of you won't see any changes.
+description=For example: [i]Mods=Kevorkian;KevorkianCyanide;[/i]
+description=
 description=[h1]Source Code[/h1]
 description=Dr. Kevorkian's Assisted Suicide is Open-Source and published on [url=https://github.com/Orcicorn-ProjectZomboid/DrKevorkian]Github[/url].
 description=Repackage, redistribute, recode, add to a modpack, whatever, I don't care, do as you please.
@@ -82,7 +88,5 @@ description=Credit would be appreciated.
 description=
 description=[h1]Like what I'm doing?[/h1]
 description=[img]https://raw.githubusercontent.com/Orcicorn-ProjectZomboid/.github/master/images/like_favorite.gif[/img] [url=https://ko-fi.com/orcicorn][img]https://raw.githubusercontent.com/Orcicorn-ProjectZomboid/.github/master/images/kofi.png[/img][/url]
-Workshop ID: 2828742547
-Mod ID: Kevorkian
 tags=Build 41;Food;Items;Misc;Multiplayer;Pop Culture
-visibility=Public
+visibility=public
