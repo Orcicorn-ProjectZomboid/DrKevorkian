@@ -1,0 +1,4 @@
+Recipe_EN = {
+    Recipe_DrDeathCreateSuicideDrink = "Создать суицидальную смесь",
+    Recipe_DrDeathCreateSuicidePills = "Создать таблетки для самоубийства",
+}

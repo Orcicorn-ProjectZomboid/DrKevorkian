@@ -1,0 +1,5 @@
+UI_EN = {
+    UI_suicide_menu = "Употребить",
+    UI_suicide_confirm = "УПОТРЕБЛЕНИЕ ЭТОГО УБЬЕТ ВАС!<br><br>Ты уверен, что хочешь умереть?",
+    UI_suicide_farewell = "Прощай жестокий мир",
+}

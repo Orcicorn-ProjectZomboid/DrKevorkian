@@ -1,0 +1,22 @@
+//VHS File Media
+// HVHS == Home VHS || RVHS == Retail VHS
+// Dr. Kevorkian Deposition: Learn Suicide Drink Recipe
+RM_KEVORKIA-HVHS-0001-META-000000000001 = "Bootleg: Ведрикт Kevorkian"
+RM_KEVORKIA-RVHS-0001-META-000000000001 = "VHS: Вердикт Kevorkian"
+RM_KEVORKIA-RVHS-0001-META-000000000002 = "Доктор Kevorkian помогал в обслуживании самоубийств"
+RM_KEVORKIA-RVHS-0001-META-000000000003 = "Записано в октябре 22, 1991"
+RM_KEVORKIA-RVHS-0001-META-000000000004 = "Фронтлайн PBS"
+RM_KEVORKIA-RVHS-0001-LINE-K00000000001 = "Чего ты хочешь? Напишите это простым языком"
+RM_KEVORKIA-RVHS-0001-LINE-M00000000002 = "Я хочу умереть."
+RM_KEVORKIA-RVHS-0001-LINE-K00000000003 = "Это так просто, как вы можете выразить это?"
+RM_KEVORKIA-RVHS-0001-LINE-M00000000004 = "Да, и я знаю, что нет пути назад"
+RM_KEVORKIA-RVHS-0001-LINE-K00000000005 = "Если ты выпьешь это, ты умрешь. Ты понимаешь?"
+RM_KEVORKIA-RVHS-0001-LINE-M00000000006 = "Я делаю. Я понимаю. я слушаю"
+RM_KEVORKIA-RVHS-0001-LINE-K00000000007 = "Сначала алкоголь расслабит ваше тело"
+RM_KEVORKIA-RVHS-0001-LINE-K00000000008 = "и тогда успокоительные погрузит вас в глубокий сон."
+RM_KEVORKIA-RVHS-0001-LINE-K00000000009 = "Вскоре после того, как обезболивающие активируются"
+RM_KEVORKIA-RVHS-0001-LINE-K00000000010 = "и вы войдете в дыхательную недостаточность."
+RM_KEVORKIA-RVHS-0001-LINE-K00000000011 = "Как только это произойдет, вы умрете в считанные минуты."
+RM_KEVORKIA-RVHS-0001-LINE-K00000000012 = "Ты это понял?"
+RM_KEVORKIA-RVHS-0001-LINE-M00000000013 = "Я делаю. Я хочу умереть."
+RM_KEVORKIA-RVHS-0001-LINE-M00000000014 = "Нет пути назад, как только ты выпьешь это"

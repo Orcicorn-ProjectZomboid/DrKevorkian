@@ -1,0 +1,3 @@
+Recipe_EN = {
+    Recipe_DrDeathCreateSuicidePills = "Создать таблетки цианида",
+}

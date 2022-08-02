@@ -1,0 +1,4 @@
+ItemName_EN = {
+    ItemName_Kevorkian.DrDeathSuicidePills = "Таблетки цианида",
+    ItemName_Kevorkian.DrDeathRecipePills = "Рецепт таблеток цианида",
+}
